@@ -19,6 +19,9 @@ add(2,3);
     }
     console.log(add(2,3));
     //arguments array like object 
-    // function addNum(){
+    function addNum(){
+        console.log(arguments);
 
-    // }
+    }
+    addNum(2,3,4,5,6);
+    //nodejs is a runtime environment for executing js code outside the browser
