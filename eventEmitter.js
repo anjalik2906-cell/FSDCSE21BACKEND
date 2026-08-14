@@ -13,3 +13,4 @@ class button extends EventEmitter {
     button.on("click",()=>{
         console.log("button click event is called");
     });
+    
