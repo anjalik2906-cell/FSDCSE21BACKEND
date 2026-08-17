@@ -12,11 +12,4 @@ async function createFile() {
         console.error("Error creating file:", error);
     }
 }
-async function readFile() {
-    try {
-        const data = await fs.promises.readFile(fileName, 'utf-8');
-        console.log("File contents:", data);
-    }
-    catch (error) {
-        console.error("Error reading file:", error);
-    }
+
