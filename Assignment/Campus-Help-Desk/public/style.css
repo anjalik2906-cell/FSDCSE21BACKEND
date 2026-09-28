@@ -5,17 +5,26 @@
 }
 
 :root {
-    --primary: #4f46e5;
-    --primary-dark: #3730a3;
-    --purple: #7c3aed;
-    --text: #172033;
-    --muted: #6b7280;
-    --border: #e5e7eb;
-    --background: #f6f7fb;
+    --primary: #9b7bb8;
+    --primary-dark: #6f4f87;
+    --purple: #b99acf;
+
+    --text: #292332;
+    --muted: #746d7d;
+
+    --border: #e5dff0;
+    --background: #f8f5fb;
     --white: #ffffff;
-    --green: #16a34a;
-    --orange: #ea580c;
-    --red: #dc2626;
+
+    --green: #3f8061;
+    --orange: #b87535;
+    --red: #b95757;
+
+    --dark: #30263a;
+    --dark-purple: #40304d;
+
+    --light-lilac: #f0eafa;
+    --soft-lilac: #e8dff1;
 }
 
 body {
@@ -133,17 +142,17 @@ body {
     color: white;
 
     background:
-        radial-gradient(
-            circle at 90% 20%,
-            rgba(255,255,255,0.18),
-            transparent 30%
-        ),
-        linear-gradient(
-            135deg,
-            #3730a3,
-            #4f46e5 55%,
-            #7c3aed
-        );
+    radial-gradient(
+        circle at 90% 20%,
+        rgba(255,255,255,0.18),
+        transparent 30%
+    ),
+    linear-gradient(
+        135deg,
+        #6f4f87,
+        #9b7bb8 55%,
+        #b99acf
+    );
 
     overflow: hidden;
 }
@@ -174,9 +183,8 @@ body {
 }
 
 .hero h1 span {
-    color: #ddd6fe;
+    color: #f0e5f8;
 }
-
 .hero p {
     margin-top: 18px;
 
