@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Help Desk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Campus Help Desk</h1>
+        <p class="subtitle">Submit and manage campus-related problems or requests.</p>
+
+        <form id="requestForm">
+            <input type="hidden" id="requestId">
+
+            <label for="name">Student Name</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+
+            <label for="category">Category</label>
+            <select id="category" required>
+                <option value="">Select Category</option>
+                <option>Electricity</option>
+                <option>Water</option>
+                <option>Internet</option>
+                <option>Classroom</option>
+                <option>Hostel</option>
+                <option>Cleanliness</option>
+                <option>Other</option>
+            </select>
+
+            <label for="description">Problem Description</label>
+            <textarea id="description" rows="4" required></textarea>
+
+            <label for="priority">Priority</label>
+            <select id="priority" required>
+                <option value="">Select Priority</option>
+                <option>Low</option>
+                <option>Medium</option>
+                <option>High</option>
+            </select>
+
+            <div class="buttons">
+                <button type="submit" id="submitBtn">Submit Request</button>
+                <button type="button" id="cancelBtn" class="cancel hidden">Cancel Edit</button>
+            </div>
+        </form>
+
+        <h2>Submitted Requests</h2>
+        <div id="requestsList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
