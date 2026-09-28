@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Campus Help Desk</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="brand">
+                <div class="brand-icon">CH</div>
+
+                <div>
+                    <h2>Campus Help Desk</h2>
+                    <span>Student Support Portal</span>
+                </div>
+            </div>
+
+            <div class="nav-status">
+                <span class="status-dot"></span>
+                Campus Services Online
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Hero Section -->
+        <section class="hero">
+
+            <div class="hero-text">
+                <span class="hero-tag">CAMPUS SUPPORT</span>
+
+                <h1>
+                    Need help on campus?
+                    <span>We've got you.</span>
+                </h1>
+
+                <p>
+                    Report an issue, request assistance, and keep track of
+                    your campus concerns — all in one place.
+                </p>
+            </div>
+
+            <div class="hero-icon">
+                ?
+            </div>
+
+        </section>
+
+
+        <!-- Stats -->
+        <section class="stats">
+
+            <div class="stat-card">
+                <div class="stat-icon blue">📋</div>
+
+                <div>
+                    <span>Total Requests</span>
+                    <strong id="totalRequests">0</strong>
+                </div>
+            </div>
+
+
+            <div class="stat-card">
+                <div class="stat-icon orange">⚡</div>
+
+                <div>
+                    <span>High Priority</span>
+                    <strong id="highPriority">0</strong>
+                </div>
+            </div>
+
+
+            <div class="stat-card">
+                <div class="stat-icon green">✓</div>
+
+                <div>
+                    <span>Easy to Manage</span>
+                    <strong>24/7</strong>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Request Form -->
+        <section class="content-grid">
+
+            <div class="form-card">
+
+                <div class="section-heading">
+
+                    <div>
+                        <span class="small-heading">SUBMIT A REQUEST</span>
+                        <h2>Tell us what you need</h2>
+                    </div>
+
+                    <div class="form-number">01</div>
+
+                </div>
+
+
+                <form id="requestForm">
+
+                    <input type="hidden" id="requestId">
+
+
+                    <div class="form-row">
+
+                        <div class="input-group">
+                            <label for="name">
+                                Student Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="Enter your full name"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="input-group">
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="student@example.com"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="input-group">
+                            <label for="category">
+                                Category
+                            </label>
+
+                            <select id="category" required>
+
+                                <option value="">
+                                    Select a category
+                                </option>
+
+                                <option>Electricity</option>
+                                <option>Water</option>
+                                <option>Internet</option>
+                                <option>Classroom</option>
+                                <option>Hostel</option>
+                                <option>Cleanliness</option>
+                                <option>Other</option>
+
+                            </select>
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label for="priority">
+                                Priority
+                            </label>
+
+                            <select id="priority" required>
+
+                                <option value="">
+                                    Select priority
+                                </option>
+
+                                <option>Low</option>
+                                <option>Medium</option>
+                                <option>High</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="description">
+                            Problem Description
+                        </label>
+
+                        <textarea
+                            id="description"
+                            rows="5"
+                            placeholder="Describe your problem clearly..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <div class="form-actions">
+
+                        <button
+                            type="submit"
+                            id="submitBtn"
+                            class="primary-btn"
+                        >
+                            <span>Submit Request</span>
+                            <span class="arrow">→</span>
+                        </button>
+
+
+                        <button
+                            type="button"
+                            id="cancelBtn"
+                            class="cancel-btn hidden"
+                        >
+                            Cancel Edit
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+
+            <!-- Information Card -->
+            <aside class="info-card">
+
+                <div class="info-top">
+                    <div class="info-icon">💡</div>
+
+                    <span>QUICK GUIDE</span>
+                </div>
+
+
+                <h3>How does it work?</h3>
+
+
+                <div class="guide-step">
+
+                    <div class="step-number">1</div>
+
+                    <div>
+                        <strong>Submit</strong>
+                        <p>Tell us about your campus issue.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="guide-step">
+
+                    <div class="step-number">2</div>
+
+                    <div>
+                        <strong>Track</strong>
+                        <p>View your request below.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="guide-step">
+
+                    <div class="step-number">3</div>
+
+                    <div>
+                        <strong>Manage</strong>
+                        <p>Edit or delete your request anytime.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="info-footer">
+                    <span>Need assistance?</span>
+                    <strong>Submit a request above ↑</strong>
+                </div>
+
+            </aside>
+
+        </section>
+
+
+        <!-- Requests -->
+        <section class="requests-section">
+
+            <div class="requests-header">
+
+                <div>
+                    <span class="small-heading">REQUEST MANAGEMENT</span>
+
+                    <h2>Recent Requests</h2>
+
+                    <p>
+                        View and manage submitted campus issues.
+                    </p>
+                </div>
+
+                <div class="request-count" id="requestCount">
+                    0 requests
+                </div>
+
+            </div>
+
+
+            <div id="requestsList" class="requests-grid">
+                <!-- Requests will appear here -->
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            Campus Help Desk • Student Support Portal
+        </p>
+
+        <span>
+            Built for a better campus experience
+        </span>
+
+    </footer>
+
+
+    <!-- Toast notification -->
+    <div id="toast" class="toast">
+        <span id="toastMessage"></span>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
