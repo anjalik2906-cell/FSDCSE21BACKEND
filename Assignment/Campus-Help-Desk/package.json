@@ -1,7 +1,8 @@
 {
   "name": "campus-help-desk",
   "version": "1.0.0",
-  "description": "Mini Project - Campus Help Desk",
+  "description": "Campus Help Desk",
+  "type": "module",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"

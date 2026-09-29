@@ -1734,3 +1734,17 @@ footer {
         min-height: 8px;
     }
 }
+/* Move Campus Service / brand section to the LEFT */
+.brand {
+    margin-right: auto;
+    margin-left: 0;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+/* Keep Online status on the RIGHT */
+.online-status {
+    margin-left: auto;
+    margin-right: 0;
+    justify-content: flex-end;
+}
